@@ -1,11 +1,12 @@
 import './App.css'
+import Footer from "./components/Footer/footer.jsx";
 
 function App() {
-  return (
-    <>
-      <h1>Hello, World!</h1>
-    </>
-  )
+    return (
+        <>
+            <Footer></Footer>
+        </>
+    )
 }
 
 export default App

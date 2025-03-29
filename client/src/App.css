@@ -1,4 +1,9 @@
-#root {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: rgb(37,34,123);
+  background: linear-gradient(113deg, rgba(37,34,123,1) 44%, rgba(24,29,82,1) 99%);
 }
