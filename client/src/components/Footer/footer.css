@@ -12,9 +12,9 @@
 
 .right {
     display: flex;
-    justify-content: flex-end; /* Вирівнюємо контент по правому краю */
-    align-items: center; /* Центруємо елементи вертикально */
-    padding-right: 20px; /* Додаємо відступ справа для естетики */
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
 }
 
 .title {

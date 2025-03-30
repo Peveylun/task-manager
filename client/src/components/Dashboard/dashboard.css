@@ -1,0 +1,7 @@
+.dashboard {
+    background: rgb(37,34,123);
+    background: linear-gradient(113deg, rgba(37,34,123,1) 44%, rgba(24,29,82,1) 99%);
+
+    width: 80%;
+    height: 800px;
+}

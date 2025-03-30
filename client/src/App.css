@@ -4,6 +4,7 @@
 }
 
 body {
-  background: rgb(37,34,123);
-  background: linear-gradient(113deg, rgba(37,34,123,1) 44%, rgba(24,29,82,1) 99%);
+  background: rgb(31,14,93);
+  background: linear-gradient(113deg, rgba(31,14,93,1) 44%, rgba(18,5,44,1) 99%);
+  min-height: 100vh;
 }
