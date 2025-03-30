@@ -1,6 +1,6 @@
 import './dashboard.css'
 
-function Dashboard(props) {
+function Dashboard() {
 
     return (
         <div className="dashboard">
