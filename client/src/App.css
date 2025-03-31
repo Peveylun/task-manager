@@ -7,4 +7,6 @@ body {
   background: rgb(31,14,93);
   background: linear-gradient(113deg, rgba(31,14,93,1) 44%, rgba(18,5,44,1) 99%);
   min-height: 100vh;
+
+  display: flex;
 }
