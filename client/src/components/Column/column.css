@@ -1,0 +1,19 @@
+.column {
+    height: 75vh;
+    min-width: 300px;
+
+    border-radius: 15px;
+    background-color: #16043B;
+    margin: 20px 5px 0 5px;
+}
+
+.column-title {
+    height: 5%;
+    border-radius: 15px 15px 0 0;
+
+    color: aliceblue;
+    text-align: center;
+    align-content: center;
+
+    background-color: #3B1586;
+}

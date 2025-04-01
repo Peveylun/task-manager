@@ -9,4 +9,14 @@
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    display: flex;
+
+    overflow: auto;
+    scrollbar-gutter: auto;
+    scrollbar-color: rgba(100,100,100, 60%) transparent;
+    scrollbar-arrow-color: transparent !important;
+
+    border-radius: 15px;
 }
+
