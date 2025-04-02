@@ -1,5 +1,4 @@
 import './column.css';
-import Task from "../Task/task.jsx";
 
 function Column(props) {
     return (

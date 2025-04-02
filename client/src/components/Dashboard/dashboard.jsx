@@ -1,16 +1,17 @@
 import './dashboard.css'
 import Column from "../Column/column.jsx";
-import Task from "../Task/task.jsx";
+import {useState} from "react";
 
 function Dashboard() {
+    const [dashboard_titles, setDashboard_titles] = useState([]);
 
     return (
         <div className="dashboard">
-            <Column title="To Do">
-            </Column>
-            <Column title="Working"></Column>
-            <Column title="Done"></Column>
-            <Column title="Optional"></Column>
+            {dashboard_titles.map(title => (
+                <Column title={title}>
+
+                </Column>
+            ))}
         </div>
     )
 }
