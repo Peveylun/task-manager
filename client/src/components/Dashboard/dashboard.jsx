@@ -1,19 +1,27 @@
-import './dashboard.css'
+import './dashboard.css';
 import Column from "../Column/column.jsx";
-import {useState} from "react";
+import { useState } from "react";
+import Task from "../Task/task.jsx";
 
 function Dashboard() {
-    const [dashboard_titles, setDashboard_titles] = useState([]);
+    const [column_titles, setDashboard_titles] = useState([]);
+    const [tasks, setTasks] = useState([]);
 
     return (
         <div className="dashboard">
-            {dashboard_titles.map(title => (
-                <Column title={title}>
-
+            {column_titles.map(title => (
+                <Column key={title} title={title}>
+                    {tasks
+                        .filter(task => task.type === title)
+                        .map((task, index) => (
+                            <Task key={index} author={task.author}>
+                                {task.description}
+                            </Task>
+                        ))}
                 </Column>
             ))}
         </div>
-    )
+    );
 }
 
 export default Dashboard;

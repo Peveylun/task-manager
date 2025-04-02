@@ -1,3 +1,5 @@
+import "./task.css"
+
 function Task(props) {
     return (
         <div className="task">

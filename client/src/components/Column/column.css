@@ -1,10 +1,10 @@
 .column {
     height: 75vh;
-    min-width: 300px;
+    min-width: 400px;
 
     border-radius: 15px;
     background-color: #16043B;
-    margin: 20px 5px 0 5px;
+    margin: 20px 10px 0 10px;
 }
 
 .column-title {
