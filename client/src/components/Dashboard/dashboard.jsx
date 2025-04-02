@@ -4,27 +4,8 @@ import { useState } from "react";
 import Task from "../Task/task.jsx";
 
 function Dashboard() {
-    const [column_titles, setDashboard_titles] = useState(["To Do", "Working"]);
-    const [tasks, setTasks] = useState([
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "To Do", description: "Some to do", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-        { type: "Working", description: "Some to do2", author: "Pevey" },
-    ]);
+    const [column_titles, setDashboard_titles] = useState([]);
+    const [tasks, setTasks] = useState([]);
 
     return (
         <div className="dashboard">
