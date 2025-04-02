@@ -2,14 +2,24 @@
     margin: 1.5%;
     min-height: 100px;
     width: 97%;
-    background-color: aliceblue;
+    background-color: #7615FF;
+    color: azure;
 
     text-align: center;
+    border-radius: 10px;
 }
 
 .author {
     min-height: 100%;
     width: 100%;
+}
+
+.line {
+    margin-top: 5px;
+    width: 95%;
+    height: 2px;
+    justify-self: center;
+    background-color: #16043B;
 }
 
 .description {

@@ -1,19 +1,31 @@
 .column {
     height: 75vh;
+    width: 400px;
     min-width: 400px;
-
+    flex-shrink: 0;
     border-radius: 15px;
     background-color: #16043B;
-    margin: 20px 10px 0 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .column-title {
-    height: 5%;
+    height: 50px;
     border-radius: 15px 15px 0 0;
-
     color: aliceblue;
     text-align: center;
-    align-content: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3B1586;
+    flex-shrink: 0;
+}
+
+.column-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100,100,100,0.6) transparent;
 }

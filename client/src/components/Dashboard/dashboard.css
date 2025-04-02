@@ -11,12 +11,18 @@
     transform: translate(-50%, -50%);
 
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    border-radius: 15px;
+    padding: 10px;
+    gap: 10px;
     scrollbar-gutter: auto;
     scrollbar-color: rgba(100,100,100, 60%) transparent;
     scrollbar-arrow-color: transparent !important;
 
-    border-radius: 15px;
 }
-
