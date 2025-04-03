@@ -13,8 +13,8 @@ function Dashboard() {
                 <Column key={title} title={title}>
                     {tasks
                         .filter(task => task.type === title)
-                        .map((task, index) => (
-                            <Task key={index} author={task.author}>
+                        .map((task) => (
+                            <Task key={task.id} author={task.author}>
                                 {task.description}
                             </Task>
                         ))}
