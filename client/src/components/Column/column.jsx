@@ -1,16 +1,15 @@
 import './column.css';
+import { useDroppable } from "@dnd-kit/core";
 
-function Column(props) {
+function Column({ id, title, children }) {
+    const { setNodeRef } = useDroppable({ id });
+
     return (
-        <div className="column">
-            <div className="column-title">
-                <p>{props.title}</p>
-            </div>
-            <div className="column-body">
-                {props.children}
-            </div>
+        <div className="column" ref={setNodeRef}>
+            <div className="column-title">{title}</div>
+            <div className="column-body">{children}</div>
         </div>
-    )
+    );
 }
 
 export default Column;

@@ -1,5 +1,4 @@
 .dashboard {
-    background: rgb(37,34,123);
     background: linear-gradient(113deg, rgba(37,34,123,1) 44%, rgba(24,29,82,1) 99%);
 
     width: 95vw;
@@ -21,8 +20,10 @@
     border-radius: 15px;
     padding: 10px;
     gap: 7.5px;
+
     scrollbar-gutter: auto;
     scrollbar-color: rgba(100,100,100, 60%) transparent;
-    scrollbar-arrow-color: transparent !important;
 
+    flex-shrink: 0;
+    white-space: nowrap;
 }
