@@ -9,9 +9,9 @@ function Footer() {
                 </div>
             </div>
             <div className="right">
-                <div className="profile">
-
-                </div>
+                <a className="profile" href="#">
+                    <img src="avatar.jpg" alt=""/>
+                </a>
             </div>
         </div>
     )
