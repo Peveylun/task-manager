@@ -11,3 +11,44 @@
     justify-content: center;
     z-index: 999;
 }
+
+.register-container {
+    background: #16043B;
+    border: 1px #16043B solid;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    gap: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.register-form input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.register-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7615FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #3B1586;
+}
