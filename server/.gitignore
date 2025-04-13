@@ -25,3 +25,5 @@ dist-ssr
 
 # etc
 .env
+*.sqlite
+*.sql
