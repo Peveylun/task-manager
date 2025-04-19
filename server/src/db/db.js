@@ -3,22 +3,48 @@ function create_table(db) {
 }
 
 function add_task(db, task) {
-    db.run("INSERT INTO tasks AS (task_type, author_id, description) VALUES (${task.task_type}, ${task.author_id}, ${task.description});");
+    return new Promise(
+        (resolve, reject) => {
+            db.run(
+                `INSERT INTO tasks (task_type, author_id, description)
+                 VALUES (?, ?, ?);`,
+                [task.task_type, task.author_id, task.description],
+                (err, result) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(result);
+                    }
+                }
+            )
+        });
 }
 
 function get_tasks(db) {
     return new Promise((resolve, reject) => {
-        db.all("SELECT * FROM tasks;", (err, result) => {
+        db.all(`SELECT * FROM tasks;`, (err, result) => {
             if (err) {
                 reject(err);
+            } else {
+                resolve(result);
             }
-            resolve(result);
         });
     });
 }
 
-export default {
-    create_table: create_table,
-    add_task: add_task,
-    get_tasks: get_tasks,
+function delete_task(db, task) {
+    return new Promise((resolve, reject) => {db.run(`DELETE FROM tasks WHERE id = ?;`, [task.id], (err, result) => {
+        if (err) {
+            reject(err);
+        } else {
+            resolve(result);
+        }});
+    });
 }
+
+export default {
+    create_table,
+    add_task,
+    get_tasks,
+    delete_task,
+};
