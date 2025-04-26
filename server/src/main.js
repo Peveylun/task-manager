@@ -23,22 +23,31 @@ app.get('/api/hello', (req, res) => {
 })
 
 app.post('/api/add_task', (req, res) => {
-    database.add_task(db, req.body)
+    const { task_type, description, author_id } = req.body;
+    database.add_task(db, { task_type, description, author_id })
         .then(result => {
             res.json(result);
         })
 })
 
-app.get('/api/tasks', (req, res) => {
+app.get('/api/get_tasks', (req, res) => {
     database.get_tasks(db).then(r => res.json(r));
 })
 
 app.delete('/api/delete_task', (req, res) => {
-    database.delete_task(db, req.body)
+    const { id } = req.params;
+    database.delete_task(db, { id })
         .then(result => {
-            console.log(result);
             res.json(result);
         });
+})
+
+app.put('/api/update_task', (req, res) => {
+    const { id, task_type } = req.body;
+    database.update_task(db, { id, task_type })
+        .then(result => {
+            res.json(result);
+        })
 })
 
 app.listen(process.env.PORT || 3000);

@@ -42,9 +42,21 @@ function delete_task(db, task) {
     });
 }
 
+function update_task(db, task) {
+    return new Promise((resolve, reject) => {
+        db.run(`UPDATE tasks SET task_type = ? WHERE id = ?;`, [task.task_type, task.id], (err, result) => {
+            if (err) {
+                reject(err);
+            }
+            resolve(result);
+        });
+    });
+}
+
 export default {
     create_table,
     add_task,
     get_tasks,
     delete_task,
+    update_task,
 };
